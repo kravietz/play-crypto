@@ -25,7 +25,7 @@ Play has a built-in [Crypto library](https://github.com/playframework/playframew
 
 The  integrity protection for `session()` uses this library `sign()` method, which is basically a [HMAC](https://en.wikipedia.org/wiki/HMAC) over the session data using SHA-1 and constant `application.secret` as secret key, which isperfectly sufficient in most cases. The hex string in the below sample cookie is the HMAC over  plaintext `variable` that follows it:
 
-  PLAY_SESSION="a71463aa0bddc8edc9e7e694f11ad6f4b2b8aa6a-variable=value"; Path=/; HTTPOnly
+	PLAY_SESSION="a71463aa0bddc8edc9e7e694f11ad6f4b2b8aa6a-variable=value"; Path=/; HTTPOnly
   
 If the HMAC doesn't match the data, the cookie is discarded and `session()` call returns `null` (this is implemented in [Http](https://github.com/playframework/playframework/blob/2.1.x/framework/src/play/src/main/scala/play/api/mvc/Http.scala) module).
 
