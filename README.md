@@ -1,9 +1,18 @@
-play-crypto
-===========
+# play-crypto
 
 This sample [Play](http://www.playframework.com/) application demonstrates state of cryptography in the Play 2.1.
 
+## Quick start
 
+Clone this repo, which is a simple, ready-to-use Play application:
+
+  $ git clone https://github.com/kravietz/play-crypto.git
+  $ cd play-crypto
+  $ play run
+  
+Now you can visit http://localhost:9000/PlayCrypto ahd http://localhost:9000/StringEnvelope to see views using Play Crypto and [StringEnvelope](https://github.com/kravietz/StringEnvelope) implementations respectively.
+
+## Cryptography in Play framework
 
 Main motivation for this work was to counter security issues caused by Play implementation of session variables. Session variable is a store that allows a web application to set variables related to a particular user's session. In the traditional Java [HttpServlet](http://docs.oracle.com/javaee/1.3/api/javax/servlet/http/HttpServlet.html) a session variable can be set using [setAttribute()](http://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpSession.html#setAttribute(java.lang.String, java.lang.Object)) and retrieved using [getAttribute()](http://docs.oracle.com/javaee/1.4/api/javax/servlet/http/HttpSession.html#getAttribute(java.lang.String)). **These values never leave the web application - they are stored on server side.**
 
