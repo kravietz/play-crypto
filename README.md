@@ -45,5 +45,5 @@ As a quick fix I have created [StringEnvelope](https://github.com/kravietz/Strin
 * initialize `StringEnvelope env = new StringEnvelope()`
 * use `env.wrap(plaintext, key)` to encrypt and `env.unwrap(ciphertext, key)` to decrypt
 
-Have a look at [app/controllers/Application.java](/kravietz/play-crypto/blob/master/app/controllers/Application.java) - it's all there.
+Have a look at [app/controllers/Application.java](https://github.com/kravietz/play-crypto/blob/master/app/controllers/Application.java) - it's all there.
 
