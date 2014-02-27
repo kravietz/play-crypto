@@ -10,7 +10,7 @@ Clone this repo, which is a simple, ready-to-use Play application:
 	$ cd play-crypto
 	$ play run
   
-Now you can visit [http://localhost:9000/PlayCrypto](http://localhost:9000/PlayCrypto) ahd [http://localhost:9000/StringEnvelope] to see views using Play Crypto and [StringEnvelope](https://github.com/kravietz/StringEnvelope) implementations respectively.
+Now you can visit [http://localhost:9000/PlayCrypto](http://localhost:9000/PlayCrypto) ahd [http://localhost:9000/StringEnvelope](http://localhost:9000/PlayCrypto) to see views using Play Crypto and [StringEnvelope](https://github.com/kravietz/StringEnvelope) implementations respectively.
 
 ## Cryptography in Play framework
 
