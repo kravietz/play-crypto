@@ -1,4 +1,4 @@
-This is your new Play application
-=====================================
+play-crypto
+===========
 
-This file will be packaged with your application, when using `play dist`.
+Encryption in Play framework
