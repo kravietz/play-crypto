@@ -6,9 +6,9 @@ This sample [Play](http://www.playframework.com/) application demonstrates state
 
 Clone this repo, which is a simple, ready-to-use Play application:
 
-  $ git clone https://github.com/kravietz/play-crypto.git
-  $ cd play-crypto
-  $ play run
+	$ git clone https://github.com/kravietz/play-crypto.git
+	$ cd play-crypto
+	$ play run
   
 Now you can visit http://localhost:9000/PlayCrypto ahd http://localhost:9000/StringEnvelope to see views using Play Crypto and [StringEnvelope](https://github.com/kravietz/StringEnvelope) implementations respectively.
 
