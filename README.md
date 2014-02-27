@@ -34,6 +34,16 @@ While the integrity protection is quite robust, most application architects will
 * it always uses the same key for encryption (again `application.secret`), which means the same plaintext will be always encrypted to the same ciphertext;
 * it uses AES in [ECB mode](https://en.wikipedia.org/wiki/Block_cipher_modes_of_operation#Electronic_codebook_.28ECB.29), which results in the same blocks of data producing the same ciphertexts.
 
- 
+While the module theoretically allows other encryption modes via a configuration variable, it doesn't  have any interface for setting encryption parameters, which makes it impossible to use anything apart from ECB.
 
+## StringEnvelope
+
+As a quick fix I have created [StringEnvelope](https://github.com/kravietz/StringEnvelope) class that reimplements the cryptographic and can be easily integrated with any Play application. Installation:
+
+* Place [StrinEnvelope.jar](https://github.com/kravietz/StringEnvelope/releases/download/1.0/StringEnvelope.jar) inside `lib` directory of your Play application
+* import `org.owasp.StringEnvelope`
+* initialize `StringEnvelope env = new StringEnvelope()`
+* use `env.wrap(plaintext, key)` to encrypt and `env.unwrap(ciphertext, key)` to decrypt
+
+Have a look at [app/controllers/Application.java](/kravietz/play-crypto/blob/master/app/controllers/Application.java) - it's all there.
 
